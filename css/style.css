@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    background-image: url(../img/backgroud.jpg);
+    background-repeat: no-repeat;
+    background-color: #B96E77;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    text-align: end;
+}
+
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.link a:hover {
+    text-decoration: none;
+    color: rgb(222, 69, 69);
+}
+
+.cont-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    grid-gap: 30px;
+}
+
+#sobre_mim {
+    font-size: 1.5rem;
+}
+
+#hobbies {
+    flex-direction: column;
+    display: flex;
+    align-self: start;
+    font-size: 1.2rem;
+}
+
+#forms {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+
+fieldset{
+    border: 2px currentColor black;
+}
+legend {
+       background-color:rgb(222, 69, 69);
+       border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column ;
+    padding:10px;
+
+}
+
+form input,
+textarea {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+label {
+    font-weight: bolder;
+}
+
+button {
+    height: 20px;
+    width: 305px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 0px;
+}
+
+button:hover {
+    background-color: #99D2D2;
+}
+
+
+.footer {
+    background-color: darkolivegreen;
+    margin-top: 200px;
+    padding: 10px 0;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+}
+
+/*Largura minima*/
+@media(max-width:756px) { 
+
+    header {
+        flex-direction: column;
+
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    main {
+        transition: 1s;
+        color: #fff;
+    }
+}
